@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weird Store</title>
+  <link rel="stylesheet" href="{% static 'base.css' %}">
+  {% block style %}
+
+  {% endblock style %}
+</head>
+
+<body>
+  <a href="{% url 'home' %}" class="button">Home</a>
+
+  {% block content %}
+
+  {% endblock content %}
+</body>
+</html>
+

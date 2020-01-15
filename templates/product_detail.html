@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'detail_page.css' %}">
+{% endblock style %}
+
+{% block content %}
+<div>
+  <h2>{{ product.title }}</h2>
+  <p>{{ product.description }}</p>
+</div>
+{% endblock content %}
