@@ -1,7 +1,17 @@
-<h1> Welsoe to our store</h1>
 
-<ul>
+{% extends 'base.html' %}
+
+
+{% block content %}
+<h1> Welcome to our weird store!</h1>
+
+<ul> Our products:
+
 {% for product in object_list %}
-<li>{{ product.title }}</li>
+<li><a href ="{% url 'product_detail' product.pk %}">{{ product.title }}</a></li>
 {%endfor %}
+
 </ul>
+
+
+{% endblock content %}

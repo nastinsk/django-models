@@ -1,0 +1,30 @@
+body {
+   background: rgb(165, 165, 165);
+}
+ul{
+    font-size: 25px;
+    font-weight: bold;
+}
+ul li{
+    font-size: 18px;
+}
+
+h1 {
+    color: rgb(16, 247, 150);
+}
+
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: rgb(130, 252, 201);
+    width: 40px;
+    height: 20px;
+    box-shadow: 5px 5px 3px grey;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 10px 20px;
+}
